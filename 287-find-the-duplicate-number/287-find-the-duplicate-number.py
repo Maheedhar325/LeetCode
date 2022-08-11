@@ -3,7 +3,7 @@ class Solution:
         add = {}
         for i in range(len(nums)):
             if nums[i] not in add:
-                add[nums[i]] = i  
+                add[nums[i]] = i 
             else:
                 return nums[i]
         
