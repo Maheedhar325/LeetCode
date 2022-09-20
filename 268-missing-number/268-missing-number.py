@@ -8,10 +8,17 @@ class Solution:
         #     else:
         #         return count
         
-        c = Counter(nums)
+        # c = Counter(nums)
+        # n = len(nums)
+        # for i in range(n+1):
+        #     if i not in c:
+        #         return i
+            
+        # O(1) Space
         n = len(nums)
-        for i in range(n+1):
-            if i not in c:
-                return i
+        s = n*(n+1)//2
+        sl = sum(nums)
+        return s - sl
+        
             
         
